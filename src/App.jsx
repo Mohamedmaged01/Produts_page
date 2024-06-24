@@ -18,7 +18,7 @@ function App() {
     setQuery(event.target.value);
   };
 
-  const filteredItems = products.filter(
+  const filteredItems = data.filter(
     (product) => product.title.toLowerCase().indexOf(query.toLowerCase()) !== -1
   );
 
@@ -67,7 +67,7 @@ function App() {
     );
   }
 
-  const result = filteredData(products, selectedCategory, query);
+  const result = filteredData(data, selectedCategory, query);
 
   return (
     <>
